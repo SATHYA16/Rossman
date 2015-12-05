@@ -14,8 +14,8 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 
 #Assign the absolute path of the data file to a variable
-file_path_train = os.path.abspath('C:/Users/apple/OneDrive/Courses/BIA 656/KAGGLE/train.csv')
-file_path_store = os.path.abspath('C:/Users/apple/OneDrive/Courses/BIA 656/KAGGLE/store.csv')
+file_path_train = os.path.abspath('C:/Sathya/Subject/Fall-2015/BIA-656//Project/Rossman/train.csv')
+file_path_store = os.path.abspath('C:/Sathya/Subject/Fall-2015/BIA-656//Project/Rossman/store.csv')
 
 #Assign the contents of the datafile to a Pandas dataframe
 df_train = pd.read_csv(file_path_train, sep=',', header=0) #Indicate to treat first row as column names
@@ -53,3 +53,4 @@ df_master0 = pd.merge(df_train, df_store, how='left', on=['Store'])
 
 #Write df_master0 to CSV
 df_master0.to_csv('master0.csv', sep=',', index=False, encoding='utf-8')
+
